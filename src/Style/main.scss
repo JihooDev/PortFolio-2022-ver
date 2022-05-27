@@ -106,11 +106,22 @@
 	.container {
 		width: 130rem;
 		margin: 0 auto;
-		background-color: red;
 
 		.about_box {
 			width: 100%;
-			background-color: firebrick;
+			margin-top: 13rem;
+
+			.about_left {
+				h2 {
+					font-size: 3.6rem;
+					font-family: $Poppins;
+
+					span {
+						color: #3333ff;
+						font-family: inherit;
+					}
+				}
+			}
 		}
 	}
 }

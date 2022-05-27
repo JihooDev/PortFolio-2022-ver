@@ -4,6 +4,7 @@ $Poppins: 'Poppins', sans-serif;
 * {
 	font-size: 62.5%;
 	user-select: none;
+	overflow-x: hidden;
 }
 
 @mixin flex {
