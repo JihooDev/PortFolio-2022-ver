@@ -1,10 +1,23 @@
+// ** Font
 $Poppins: 'Poppins', sans-serif;
-// noto Kr 기본 폰트 적용 (영어는 Poppins 로 변경);
+// noto Kr 기본 폰트 적용 (영어는 Poppins 로 변경)
+
+// ** Color
+$vivid-sky-blue: #3cf;
+$manatee: #9c9fab;
+$cultured: #f4f4f6;
+$eerie-black: #1c1d21;
+$light-gray: #d3d4d9;
+$black-coral: #676b79;
+$han-purple: #3333ff;
+$ghost-white: #fbfbff;
+$lavender-web: #e7e7ff;
+$white: #fff;
+$rusty-red: #de3c4b;
 
 * {
 	font-size: 62.5%;
 	user-select: none;
-	overflow-x: hidden;
 }
 
 @mixin flex {

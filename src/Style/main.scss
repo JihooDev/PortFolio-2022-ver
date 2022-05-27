@@ -1,99 +1,93 @@
 @import './app_module.scss';
 
-.Main {
-	width: 192rem;
-	height: 100vh;
-	background-image: url('../asset/main_back.jpg');
-	background-size: cover;
+.Header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	transition: all 0.2s ease-in-out;
 
-	header {
-		position: sticky;
-		top: 0;
-		width: 100%;
-		height: 13rem;
-		transition: all 0.3s ease-in-out;
-
-		&.active {
-			background-color: #fff;
-
-			.header {
-				.main_logo {
-					h1 {
-						color: #000;
-					}
-				}
-
-				.main_menu {
-					ul > li > a {
-						color: #000;
-					}
-				}
+	&.active {
+		background-color: $cultured;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		.container {
+			div > h1 {
+				color: #000;
 			}
-		}
-
-		.header {
-			width: 130rem;
-			height: 100%;
-			margin: 0 auto;
-			@include flex();
-			justify-content: space-between;
-			.main_logo {
-				h1 {
-					color: #fff;
-					font-size: 3rem;
-					font-family: $Poppins;
-					cursor: pointer;
-				}
-			}
-
-			.main_menu {
-				ul {
-					@include flex();
-
-					li > a {
-						color: #fff;
-						font-size: 2.4rem;
-						font-family: $Poppins;
-						margin-left: 2.5rem;
-					}
-				}
+			ul > li > a {
+				color: #000;
 			}
 		}
 	}
 
 	.container {
 		width: 130rem;
+		height: 10rem;
+		margin: 0 auto;
+		@include flex();
+		justify-content: space-between;
+
+		div > h1 {
+			font-size: 3rem;
+			font-family: $Poppins;
+			color: #fff;
+		}
+
+		ul {
+			@include flex();
+
+			li {
+				margin-left: 5rem;
+
+				a {
+					font-size: 2rem;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+// Header End
+
+.Main {
+	height: 100vh;
+	background-image: url('../asset/main_back.jpg');
+	background-size: cover;
+	@include flex();
+	position: relative;
+
+	.container {
+		width: 130rem;
 		margin: 0 auto;
 
 		main {
-			height: 70rem;
-			@include flex();
-
 			h2 {
 				font-size: 5rem;
 				text-align: center;
 				color: #fff;
+				line-height: 8rem;
 
 				span {
 					font-size: inherit;
+					padding: 1rem;
 					color: inherit;
-					background-color: #3333ff;
-					padding: 0.5rem;
-					margin: 0.5rem;
+					background-color: $han-purple;
+					margin: 0 0.5rem;
 					border-radius: 1rem;
 				}
 			}
 		}
+	}
 
-		footer {
-			height: 10.5rem;
-			@include flex();
-			p {
-				color: #fff;
-				font-size: 2rem;
-				font-family: $Poppins;
-				font-weight: 300;
-			}
+	footer {
+		position: absolute;
+		bottom: 5%;
+
+		p {
+			font-size: 2rem;
+			color: #fff;
+			font-family: $Poppins;
 		}
 	}
 }
@@ -101,25 +95,92 @@
 // Main End
 
 .About {
-	background-color: #fbfbff;
-
+	background-color: $ghost-white;
 	.container {
 		width: 130rem;
 		margin: 0 auto;
 
 		.about_box {
-			width: 100%;
-			margin-top: 13rem;
+			margin-top: 10rem;
+			@include flex();
 
 			.about_left {
+				width: 50%;
 				h2 {
 					font-size: 3.6rem;
 					font-family: $Poppins;
 
 					span {
-						color: #3333ff;
-						font-family: inherit;
+						font-size: 3.2rem;
+						color: $han-purple;
 					}
+				}
+
+				div {
+					margin-top: 1rem;
+					position: relative;
+					width: 50rem;
+					height: 50rem;
+					background-image: url('../asset/myMain.jpg');
+					background-size: cover;
+					border-radius: 2rem;
+
+					h1 {
+						position: absolute;
+						top: 0;
+						right: -10rem;
+						font-size: 7rem;
+						text-align: center;
+						text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					}
+				}
+			}
+
+			.about_right {
+				width: 50%;
+
+				h2 {
+					font-size: 4.4rem;
+					font-weight: 100;
+
+					span {
+						background-color: $han-purple;
+						padding: 1rem;
+						color: #fff;
+						font-weight: bold;
+						letter-spacing: 0.05rem;
+						border-radius: 1rem;
+					}
+				}
+
+				div {
+					margin-top: 10rem;
+					h2 {
+						font-size: 2.5rem;
+						font-weight: bold;
+						font-family: $Poppins;
+					}
+
+					p {
+						font-size: 1.7rem;
+						margin: 1rem 0;
+						font-weight: 300;
+					}
+				}
+			}
+		}
+
+		.about_message {
+			margin-top: 10rem;
+
+			.message_box {
+				width: 80rem;
+				background-color: #2ecc71;
+				border-radius: 2rem;
+				p {
+					padding: 3rem;
+					font-size: 2rem;
+					color: #fff;
 				}
 			}
 		}

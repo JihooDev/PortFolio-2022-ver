@@ -11,8 +11,26 @@ export default function Header() {
 	});
 
 	return (
-		<div className="Header">
-			<h2>ddd</h2>
+		<div className={scrollPosition > 0 ? 'Header active ' : 'Header'}>
+			<div className="container">
+				<div>
+					<h1>JIHOO'S PortFolio</h1>
+				</div>
+				<ul>
+					<li>
+						<a href="#About">About me</a>
+					</li>
+					<li>
+						<a href="">Skill</a>
+					</li>
+					<li>
+						<a href="">Project</a>
+					</li>
+					<li>
+						<a href="">Contact</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	);
 }
