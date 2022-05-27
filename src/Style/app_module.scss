@@ -1,0 +1,13 @@
+$Poppins: 'Poppins', sans-serif;
+// noto Kr 기본 폰트 적용 (영어는 Poppins 로 변경);
+
+* {
+	font-size: 62.5%;
+	user-select: none;
+}
+
+@mixin flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
