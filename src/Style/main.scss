@@ -31,6 +31,7 @@
 			font-size: 3rem;
 			font-family: $Poppins;
 			color: #fff;
+			cursor: pointer;
 		}
 
 		ul {
@@ -101,7 +102,6 @@
 // Main End
 
 .About {
-	background-color: $ghost-white;
 	.container {
 		width: 130rem;
 		margin: 0 auto;
@@ -112,15 +112,7 @@
 
 			.about_left {
 				width: 50%;
-				h2 {
-					font-size: 3.6rem;
-					font-family: $Poppins;
-
-					span {
-						font-size: 3.2rem;
-						color: $han-purple;
-					}
-				}
+				@include tagBanner();
 
 				div {
 					margin-top: 1rem;
@@ -188,6 +180,79 @@
 					font-size: 2rem;
 					color: #fff;
 					font-weight: 100;
+				}
+			}
+		}
+	}
+}
+
+// About End
+
+.Skill {
+	.container {
+		width: 130rem;
+		margin: 0 auto;
+
+		.skill_header {
+			margin-top: 10rem;
+			@include flex();
+			justify-content: space-between;
+			@include tagBanner();
+
+			button {
+				font-size: 2.5rem;
+				padding: 1rem;
+				border: none;
+				outline: none;
+				border-radius: 1rem;
+				background-color: #de3c4b;
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+
+		.skill_box {
+			margin-top: 1rem;
+			@include flex();
+			justify-content: space-between;
+
+			.skill_text {
+				h3 {
+					font-size: 2rem;
+					font-family: $Poppins;
+					margin: 3rem 0;
+					padding: 2rem 3rem;
+					text-align: center;
+					background-color: $han-purple;
+					border-radius: 1rem;
+					color: #fff;
+				}
+			}
+
+			.skill_per {
+				div {
+					@include flex();
+					.per {
+						@include flex();
+						justify-content: flex-start;
+						width: 100rem;
+						height: 1rem;
+						margin: 4.5rem;
+						border-radius: 1rem;
+						background-color: $light-gray;
+
+						div {
+							width: 9rem;
+							height: 100%;
+							background-color: #2ecc71;
+							border-radius: 1rem;
+							transition: all 0.3s ease-in-out;
+						}
+					}
+
+					p {
+						font-size: 1.5rem;
+					}
 				}
 			}
 		}

@@ -26,3 +26,15 @@ $rusty-red: #de3c4b;
 	justify-content: center;
 	align-items: center;
 }
+
+@mixin tagBanner {
+	h2 {
+		font-size: 3.6rem;
+		font-family: $Poppins;
+
+		span {
+			font-size: 3.2rem;
+			color: $han-purple;
+		}
+	}
+}

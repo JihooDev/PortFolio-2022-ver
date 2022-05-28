@@ -9,13 +9,13 @@ export default function About() {
 					<div className="about_left">
 						<h2>
 							&lt;About me <span>type = "자기소개"</span> &gt;
-							<div>
-								<h1>
-									Ji hoo <br />
-									Kim
-								</h1>
-							</div>
 						</h2>
+						<div>
+							<h1>
+								Ji hoo <br />
+								Kim
+							</h1>
+						</div>
 					</div>
 					<div className="about_right">
 						<h2>
