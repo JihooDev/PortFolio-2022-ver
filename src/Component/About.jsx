@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Style/main.scss';
-import myMain from '../asset/myMain.jpg';
 
 export default function About() {
 	return (

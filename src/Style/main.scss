@@ -14,7 +14,7 @@
 			div > h1 {
 				color: #000;
 			}
-			ul > li > a {
+			ul > li {
 				color: #000;
 			}
 		}
@@ -38,10 +38,16 @@
 
 			li {
 				margin-left: 5rem;
+				font-size: 2rem;
+				color: #fff;
+				font-family: $Poppins;
+				cursor: pointer;
+				transition: all 0.2s ease-in-out;
 
-				a {
-					font-size: 2rem;
-					color: #fff;
+				&.active {
+					color: $han-purple;
+					position: relative;
+					font-weight: bold;
 				}
 			}
 		}
@@ -181,6 +187,7 @@
 					padding: 3rem;
 					font-size: 2rem;
 					color: #fff;
+					font-weight: 100;
 				}
 			}
 		}
