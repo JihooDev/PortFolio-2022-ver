@@ -1,31 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../Style/main.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function About() {
+	useEffect(() => {
+		AOS.init();
+	});
+
 	return (
 		<div className="About">
 			<div className="container">
 				<div className="about_box">
 					<div className="about_left">
-						<h2>
+						<h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 							&lt;About me <span>type = "자기소개"</span> &gt;
 						</h2>
-						<div>
-							<h1>
+						<div data-aos="fade-up" data-aos-duration="3000">
+							<h1 data-aos="fade-up" data-aos-duration="3000">
 								Ji hoo <br />
 								Kim
 							</h1>
 						</div>
 					</div>
 					<div className="about_right">
-						<h2>
+						<h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 							항상 Why 로 접근하여
 							<br />
 							나만의 Skill 로 만드는
 							<br />
 							<span>프론트엔드 개발자 김지후</span>
 						</h2>
-						<div>
+						<div data-aos="fade-up" data-aos-duration="3000">
 							<h2>Education</h2>
 							<p>강동대학교 방송영상미디어학과 졸업</p>
 							<p>제주 서귀포 고등학교 졸업</p>
@@ -33,7 +39,7 @@ export default function About() {
 					</div>
 				</div>
 				<div className="about_message">
-					<div className="message_box">
+					<div className="message_box" data-aos="fade-up" data-aos-duration="2000">
 						<p>
 							안녕하세요! 프론트엔드 개발자 김지후 입니다.
 							<br />

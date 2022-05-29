@@ -3,8 +3,8 @@ import Main from './Component/Main';
 import About from './Component/About';
 import Header from './Component/Header';
 import Skill from './Component/Skill';
-import { useState } from 'react';
 import Project from './Component/Project';
+import 'aos/dist/aos.css';
 
 function App() {
 	return (

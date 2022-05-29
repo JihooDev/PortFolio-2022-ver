@@ -189,6 +189,7 @@
 // About End
 
 .Skill {
+	background-color: $ghost-white;
 	.container {
 		width: 130rem;
 		margin: 0 auto;
@@ -272,47 +273,46 @@
 		}
 
 		.pro_main {
-			@include flex();
-			margin: 10rem 0;
-			justify-content: space-between;
+			width: 100%;
+
+			.swiper-button-next,
+			.swiper-button-prev {
+				color: #fff;
+				background-color: $han-purple;
+				border-radius: 1rem;
+				padding: 3rem;
+			}
+
 			.card {
-				width: 30rem;
-				height: 40rem;
-				.card_img {
-					width: 100%;
-					height: 100%;
-					position: relative;
+				width: 415px;
+				height: 538px;
+				border-radius: 20px;
+				margin-top: 2rem;
+				filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-					img {
-						border-radius: 1rem;
-						width: 100%;
-						height: 100%;
-					}
-
-					.card_text {
-						@include flex();
-						flex-direction: column;
-						width: 100%;
-						height: 100%;
-						position: absolute;
-						top: 0%;
-						background-color: rgba(0, 0, 0, 0.25);
-						border-radius: 1rem;
-
-						h1,
-						p {
-							color: #fff;
-						}
-
-						h1 {
-							font-size: 2rem;
-						}
-
-						#intro {
-							font-size: 1.5rem;
-						}
-					}
+				h1 {
+					font-size: 2.5rem;
 				}
+			}
+
+			.card1 {
+				background-image: url('../asset/myMain.jpg');
+				background-size: cover;
+			}
+
+			.card2 {
+				background-image: url('../asset/diary.jpg');
+				background-size: cover;
+			}
+
+			.card3 {
+				background-image: url('../asset/running.jpg');
+				background-size: cover;
+			}
+
+			.card4 {
+				background-image: url('../asset/신호등.jpg');
+				background-size: cover;
 			}
 		}
 	}

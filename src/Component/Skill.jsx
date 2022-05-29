@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../Style/main.scss';
 import skillArr from '../ModuleFile/data';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Skill() {
 	const [scrollPosition, setScrollPosition] = useState(0);
@@ -8,6 +10,7 @@ export default function Skill() {
 		setScrollPosition(window.scrollY || document.documentElement.scrollTop);
 	};
 	useEffect(() => {
+		AOS.init();
 		window.addEventListener('scroll', updateScroll);
 	});
 
@@ -15,12 +18,12 @@ export default function Skill() {
 		<div className="Skill">
 			<div className="container">
 				<div className="skill_header">
-					<h2>
+					<h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 						&lt;Skill <span>type = "기술 스택"</span> &gt;
 					</h2>
 					<button>Planning Skill</button>
 				</div>
-				<div className="skill_box">
+				<div className="skill_box" data-aos="fade-up" data-aos-duration="3000">
 					<div>
 						{skillArr.map(it => {
 							return (
