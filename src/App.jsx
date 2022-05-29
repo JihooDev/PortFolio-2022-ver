@@ -4,6 +4,7 @@ import About from './Component/About';
 import Header from './Component/Header';
 import Skill from './Component/Skill';
 import { useState } from 'react';
+import Project from './Component/Project';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Main />
 			<About id="About" />
 			<Skill />
+			<Project />
 		</div>
 	);
 }

@@ -48,5 +48,4 @@ const skillArr = [
 		per: 85,
 	},
 ];
-
 export default skillArr;

@@ -3,6 +3,14 @@ import '../Style/main.scss';
 import skillArr from '../ModuleFile/data';
 
 export default function Skill() {
+	const [scrollPosition, setScrollPosition] = useState(0);
+	const updateScroll = () => {
+		setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+	};
+	useEffect(() => {
+		window.addEventListener('scroll', updateScroll);
+	});
+
 	return (
 		<div className="Skill">
 			<div className="container">
@@ -28,7 +36,7 @@ export default function Skill() {
 							return (
 								<div key={it.id}>
 									<div className="per">
-										<div style={{ width: it.per + '%' }}></div>
+										<div style={scrollPosition > 1885 ? { width: it.per + '%' } : { width: '0%' }}></div>
 									</div>
 									<p>{it.point}</p>
 								</div>
