@@ -23,7 +23,9 @@ export default function Project() {
 					<h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 						&lt;Project <span>type = "진행한 프로젝트"</span> &gt;
 					</h2>
-					<p>{project.length} 개의 Project</p>
+					<p data-aos="flip-left" data-aos-delay="1000">
+						{project.length} 개의 Project
+					</p>
 				</div>
 				<Swiper spaceBetween={50} slidesPerView={3} navigation className="pro_main" data-aos="fade-up" data-aos-duration="2000">
 					<SwiperSlide className="card_con">

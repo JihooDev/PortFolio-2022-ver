@@ -26,6 +26,10 @@ export default function Header() {
 		document.documentElement.scrollTop = 2845;
 	};
 
+	const contactGo = () => {
+		document.documentElement.scrollTop = 3654;
+	};
+
 	return (
 		<div className={scrollPosition > 0 ? 'Header active ' : 'Header'}>
 			<div className="container">
@@ -39,10 +43,12 @@ export default function Header() {
 					<li onClick={skillGo} className={scrollPosition >= 1895 && scrollPosition < 2845 ? 'active' : null}>
 						Skill
 					</li>
-					<li onClick={projectGo} className={scrollPosition >= 2845 ? 'active' : null}>
+					<li onClick={projectGo} className={scrollPosition >= 2845 && scrollPosition < 3654 ? 'active' : null}>
 						Project
 					</li>
-					<li>Contact</li>
+					<li onClick={contactGo} className={scrollPosition >= 3654 ? 'active' : null}>
+						Contact
+					</li>
 				</ul>
 			</div>
 		</div>
