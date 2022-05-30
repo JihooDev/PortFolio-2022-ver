@@ -263,6 +263,7 @@
 // Skill End
 
 .Project {
+	height: 80vh;
 	.container {
 		width: 130rem;
 		margin: 0 auto;
@@ -283,20 +284,75 @@
 				padding: 3rem;
 			}
 
-			.card {
-				width: 415px;
-				height: 538px;
-				border-radius: 20px;
-				margin-top: 2rem;
-				filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+			.card_con {
+				perspective: 45rem;
+				height: 50rem;
 
-				h1 {
-					font-size: 2.5rem;
+				.card {
+					width: 35rem;
+					height: 45rem;
+					border-radius: 2rem;
+					margin-top: 2rem;
+					filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+					cursor: pointer;
+					backface-visibility: hidden;
+					transition: all 0.5s ease-in-out;
+
+					h1 {
+						font-size: 2.5rem;
+					}
+				}
+
+				.front {
+					position: absolute;
+					transform: rotateY(0deg);
+				}
+
+				.back {
+					transform: rotateY(-180deg);
+					@include flex();
+					flex-direction: column;
+					justify-content: space-between;
+
+					.project_name {
+						height: 15%;
+						h1 {
+							text-align: center;
+							margin-top: 1rem;
+							font-size: 2.5rem;
+						}
+					}
+
+					.project_intro {
+						height: 85%;
+						@include flex();
+						flex-direction: column;
+						align-items: flex-start;
+
+						p {
+							font-size: 1.5rem;
+							margin: 1rem 0rem;
+
+							span {
+								font-size: 1.5rem;
+								padding-right: 2.5rem;
+							}
+						}
+					}
+				}
+
+				&:hover .back {
+					transform: rotateY(0deg);
+					background-color: $lavender-web;
+				}
+
+				&:hover .front {
+					transform: rotateY(180deg);
 				}
 			}
 
 			.card1 {
-				background-image: url('../asset/myMain.jpg');
+				background-image: url('../asset/마인플루언서.jpg');
 				background-size: cover;
 			}
 
