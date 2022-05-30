@@ -23,8 +23,9 @@ export default function Project() {
 					<h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 						&lt;Project <span>type = "진행한 프로젝트"</span> &gt;
 					</h2>
+					<p>{project.length} 개의 Project</p>
 				</div>
-				<Swiper spaceBetween={50} slidesPerView={3} navigation className="pro_main" data-aos="fade-up" data-aos-duration="3000">
+				<Swiper spaceBetween={50} slidesPerView={3} navigation className="pro_main" data-aos="fade-up" data-aos-duration="2000">
 					<SwiperSlide className="card_con">
 						<div className="card front card1"></div>
 						<div className="card back">
@@ -113,6 +114,52 @@ export default function Project() {
 									<span>프로젝트 소개</span>
 									<br />
 									{project[3].Introduction}
+								</p>
+							</div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide className="card_con">
+						<div className="card front card5"></div>
+						<div className="card back">
+							<div className="project_name">
+								<h1>{project[4].name}</h1>
+							</div>
+							<div className="project_intro">
+								<p>
+									<span>제작 기간</span>
+									{project[4].period}
+								</p>
+								<p>
+									<span>제작 언어</span>
+									{project[4].lang}
+								</p>
+								<p>
+									<span>프로젝트 소개</span>
+									<br />
+									{project[4].Introduction}
+								</p>
+							</div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide className="card_con">
+						<div className="card front card6"></div>
+						<div className="card back">
+							<div className="project_name">
+								<h1>{project[5].name}</h1>
+							</div>
+							<div className="project_intro">
+								<p>
+									<span>제작 기간</span>
+									{project[5].period}
+								</p>
+								<p>
+									<span>제작 언어</span>
+									{project[5].lang}
+								</p>
+								<p>
+									<span>프로젝트 소개</span>
+									<br />
+									{project[5].Introduction}
 								</p>
 							</div>
 						</div>

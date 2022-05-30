@@ -39,6 +39,22 @@ const project = [
 		인생을 표현!`,
 		image: 신호등,
 	},
+	{
+		id: 4,
+		name: 'Youtube API',
+		period: '2022.05',
+		lang: 'JavaScript',
+		Introduction: `Youtube API 로 50명의 유튜버를 출력`,
+		image: 신호등,
+	},
+	{
+		id: 5,
+		name: '철통보안 회원가입 form',
+		period: '2022.05',
+		lang: 'HTML, JavaScript',
+		Introduction: `정규식 등을 사용한 완벽한 철통보안 회원가입 form`,
+		image: 신호등,
+	},
 ];
 
 export default project;
