@@ -2,6 +2,9 @@ import React from 'react';
 import '../Style/main.scss';
 import email from '../asset/email.png';
 import phone from '../asset/phone.png';
+import github from '../asset/github_logo.svg';
+import tistory from '../asset/tistory.png';
+import insta from '../asset/insta_logo.png';
 
 export default function Contact() {
 	return (
@@ -39,9 +42,10 @@ export default function Contact() {
 				</div>
 				<div className="con_text">
 					<div className="con_main_text">
-						<h1>“저의 포텐을 터트려줄 기업을 찾습니다”</h1>
-						<div></div>
-						<p>
+						<h1 data-aos="fade-down" data-aos-easing="linear">
+							“저의 포텐을 터트려줄 기업을 찾습니다”
+						</h1>
+						<p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 							저의 만족감은 곧 사용자에서 부터 나옵니다.
 							<br />
 							사용자를 우선적으로 생각하는 결과물을 만들겠습니다.
@@ -53,7 +57,7 @@ export default function Contact() {
 							<span>최신의 트렌드를 개척하는 개발자가 되겠습니다.</span>
 						</p>
 					</div>
-					<h2>
+					<h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 						&lt;button <span>type = "연락주세요!"</span> &gt;
 					</h2>
 					<div className="phone_email">
@@ -69,6 +73,25 @@ export default function Contact() {
 							</span>
 							| +82 10 5217 6194
 						</p>
+					</div>
+					<div className="link">
+						<ul>
+							<li>
+								<a href="https://github.com/JihooDev" target={'_blank'}>
+									<img src={github} alt="깃허브" />
+								</a>
+							</li>
+							<li>
+								<a href="https://hoopiler.tistory.com/" target={'_blank'}>
+									<img src={tistory} alt="티스토리" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/08.29__/" target={'_blank'}>
+									<img src={insta} alt="인스타그램" />
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>

@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../Style/main.scss';
-
 export default function Main() {
 	return (
 		<div className="Main">
