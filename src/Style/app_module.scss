@@ -38,17 +38,3 @@ $rusty-red: #de3c4b;
 		}
 	}
 }
-
-@keyframes colorChange {
-	0% {
-		background-color: transparent;
-	}
-
-	50% {
-		background-color: $han-purple;
-	}
-
-	100% {
-		background-color: $rusty-red;
-	}
-}
