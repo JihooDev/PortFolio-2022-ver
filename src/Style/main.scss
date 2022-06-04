@@ -221,7 +221,7 @@
 				h3 {
 					font-size: 2rem;
 					font-family: $Poppins;
-					margin: 3rem 0;
+					margin: 2rem 0;
 					padding: 2rem 3rem;
 					text-align: center;
 					background-color: $han-purple;
@@ -238,7 +238,7 @@
 						justify-content: flex-start;
 						width: 100rem;
 						height: 1rem;
-						margin: 4.5rem;
+						margin: 4rem;
 						border-radius: 1rem;
 						background-color: $light-gray;
 
@@ -247,7 +247,7 @@
 							height: 100%;
 							background-color: #2ecc71;
 							border-radius: 1rem;
-							transition: all 0.3s ease-in-out;
+							transition: all 1s ease-in-out;
 						}
 					}
 
@@ -272,7 +272,7 @@
 			margin-top: 10rem;
 			@include tagBanner();
 
-			p {
+			#project_num {
 				font-size: 1.5rem;
 				margin: 1rem 0;
 				background-color: $han-purple;
@@ -285,111 +285,48 @@
 			}
 		}
 
-		.pro_main {
-			width: 100%;
+		.project_main {
+			@include flex();
+			justify-content: space-between;
 
-			.swiper-button-next,
-			.swiper-button-prev {
-				color: #fff;
-				background-color: $han-purple;
-				border-radius: 1rem;
-				padding: 3rem;
-			}
-
-			.card_con {
-				perspective: 45rem;
+			.card {
+				width: 30rem;
 				height: 50rem;
+				margin-top: 2rem;
+				border-radius: 1rem;
+				cursor: pointer;
+				box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+				transition: all 0.3s ease-in-out;
 
-				.card {
-					width: 35rem;
-					height: 45rem;
-					border-radius: 2rem;
-					margin-top: 2rem;
-					filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-					cursor: pointer;
-					backface-visibility: hidden;
-					transition: all 0.5s ease-in-out;
-
-					h1 {
-						font-size: 2.5rem;
-					}
-				}
-
-				.front {
-					position: absolute;
-					transform: rotateY(0deg);
-				}
-
-				.back {
-					transform: rotateY(-180deg);
-					@include flex();
-					flex-direction: column;
-					justify-content: space-between;
-
-					.project_name {
-						height: 15%;
-						h1 {
-							text-align: center;
-							margin-top: 1rem;
-							font-size: 2.5rem;
-						}
-					}
-
-					.project_intro {
-						height: 85%;
-						@include flex();
-						flex-direction: column;
-						align-items: flex-start;
-
-						p {
-							font-size: 1.5rem;
-							margin: 1rem 0rem;
-
-							span {
-								font-size: 1.5rem;
-								padding-right: 2.5rem;
-							}
-						}
-					}
-				}
-
-				&:hover .back {
-					transform: rotateY(0deg);
+				&:hover {
 					background-color: $lavender-web;
 				}
 
-				&:hover .front {
-					transform: rotateY(180deg);
+				h2 {
+					font-size: 2rem;
+					height: 5rem;
+					@include flex();
 				}
-			}
 
-			.card1 {
-				background-image: url('../asset/마인플루언서.jpg');
-				background-size: cover;
-			}
+				img {
+					width: 100%;
+					height: 40rem;
+				}
 
-			.card2 {
-				background-image: url('../asset/diary.jpg');
-				background-size: cover;
-			}
+				p {
+					height: 5rem;
+					font-size: 1.5rem;
+					@include flex();
+					justify-content: flex-start;
+					font-weight: bold;
+					padding-left: 3rem;
 
-			.card3 {
-				background-image: url('../asset/running.jpg');
-				background-size: cover;
-			}
-
-			.card4 {
-				background-image: url('../asset/신호등.jpg');
-				background-size: cover;
-			}
-
-			.card5 {
-				background-image: url('../asset/youtube.jpg');
-				background-size: cover;
-			}
-			.card6 {
-				background-image: url('../asset/form.jpg');
-				background-size: cover;
+					span {
+						font-size: 1.4rem;
+						margin-left: 0.4rem;
+						font-weight: normal;
+					}
+				}
 			}
 		}
 	}
@@ -404,9 +341,10 @@
 		@include tagBanner();
 
 		.contact_message {
+			margin-top: 5rem;
 			width: 100%;
 			background-color: #fff;
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 			height: 70vh;
 			@include flex();
 			flex-direction: column;

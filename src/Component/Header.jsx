@@ -7,7 +7,6 @@ export default function Header() {
 	};
 	useEffect(() => {
 		window.addEventListener('scroll', updateScroll);
-		console.log(scrollPosition);
 	});
 
 	const homeGo = () => {

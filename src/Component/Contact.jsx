@@ -63,13 +63,13 @@ export default function Contact() {
 					<div className="phone_email">
 						<p>
 							<span>
-								<img src={email} alt="" srcset="" />
+								<img src={email} alt="" srcSet="" />
 							</span>
 							| wlgn829@gmail.com
 						</p>
 						<p>
 							<span>
-								<img src={phone} alt="" srcset="" />
+								<img src={phone} alt="" srcSet="" />
 							</span>
 							| +82 10 5217 6194
 						</p>
