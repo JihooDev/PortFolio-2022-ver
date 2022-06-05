@@ -1,18 +1,22 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../Style/main.scss';
 import project from '../ModuleFile/project';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Project_popup from './popup/Project_popup';
 
 export default function Project() {
 	useEffect(() => {
 		AOS.init();
 	});
 
-	const projectId = useRef();
+	const [popup, setPopup] = useState(false);
 
-	const focusProject = () => {
-		console.log(projectId.current);
+	const cardRef = useRef();
+
+	const popupOpen = e => {
+		setPopup(true);
+		return e.currentTarget;
 	};
 
 	return (
@@ -26,9 +30,9 @@ export default function Project() {
 						{project.length} 개의 Project
 					</p>
 					<div className="project_main">
-						{project.map((it, a) => {
+						{project.map(it => {
 							return (
-								<div className="card" key={it.id} ref={projectId}>
+								<div className="card" key={it.id} id={it.id} onClick={popupOpen} ref={cardRef}>
 									<h2>{it.name}</h2>
 									<img src={it.image} alt="프로젝트 img" />
 									<p>
@@ -38,6 +42,7 @@ export default function Project() {
 							);
 						})}
 					</div>
+					{popup ? <Project_popup setPopup={setPopup} project={project[popupOpen]} /> : null}
 				</div>
 			</div>
 		</div>
