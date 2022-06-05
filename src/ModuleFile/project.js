@@ -9,9 +9,10 @@ const project = [
 		name: '마인플루언서 (Team)',
 		period: '2022.04 ~ 2022.07',
 		lang: 'Jsp, Java, JavaScript, MySQL',
-		Introduction: `사용자의 관심사에 맞춘 인플루언서를 추천하여
-		쉽고 빠르게 찾을 수 있도록 도와주는 플랫폼.`,
+		Introduction: `마인플루언서는 인플루언서를 소개시켜주고 찜하기 기능과 분야 별 랭킹을 제공하는 페이지 입니다. 학원 동기들과 시작한 저의 첫 팀 프로젝트 이며.
+		실무에 빠른 적응을 위하여 소통을 중요 시 했습니다 또한 FE 와 BE 간의 어떠한 대화가 오고 가는지도 느꼈습니다. `,
 		image: mine,
+		github: 'https://github.com/JihooDev/Minefluencer',
 	},
 	{
 		id: 1,
@@ -20,14 +21,16 @@ const project = [
 		lang: 'React.js',
 		Introduction: `React JS 로 만들어 본 감성 일기장 입니다. 오늘 하루의 기분은 어땠는지 그리고 오늘 무슨일이 있었는지를 기록 할 수 있습니다.`,
 		image: diary,
+		github: 'https://github.com/JihooDev/SimpleDiary-',
 	},
 	{
 		id: 2,
 		name: 'Youtube API',
 		period: '2022.05',
 		lang: 'JavaScript',
-		Introduction: `Youtube API 로 50명의 유튜버를 출력`,
+		Introduction: `마인플루언서 프로젝트를 진행 할 때 사용해 본 Youtube API 로 화면에 출력해봤습니다.`,
 		image: youtube,
+		github: 'https://github.com/JihooDev/PortFolio',
 	},
 	{
 		id: 3,
@@ -36,6 +39,7 @@ const project = [
 		lang: 'HTML, JavaScript',
 		Introduction: `정규식 등을 사용한 완벽한 철통보안 회원가입 form`,
 		image: form,
+		github: 'https://github.com/JihooDev/Form',
 	},
 ];
 

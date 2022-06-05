@@ -10,13 +10,16 @@ export default function Project() {
 		AOS.init();
 	});
 
-	const [popup, setPopup] = useState(false);
+	const [popup, setPopup] = useState(true);
 
 	const cardRef = useRef();
 
+	const [popNum, setPopNum] = useState(0);
+
 	const popupOpen = e => {
+		console.log(popNum);
+		setPopNum(e.currentTarget.id);
 		setPopup(true);
-		return e.currentTarget;
 	};
 
 	return (
@@ -42,7 +45,7 @@ export default function Project() {
 							);
 						})}
 					</div>
-					{popup ? <Project_popup setPopup={setPopup} project={project[popupOpen]} /> : null}
+					{popup ? <Project_popup setPopup={setPopup} project={project[popNum]} /> : null}
 				</div>
 			</div>
 		</div>

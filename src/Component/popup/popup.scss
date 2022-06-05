@@ -1,9 +1,63 @@
+@import url('/src/Style/app_module.scss');
+
 .Project_popup {
 	width: 100%;
 	height: 100%;
-	background-color: rgba($color: #000000, $alpha: 0.3);
+	background-color: rgba($color: #000000, $alpha: 0.7);
 	position: fixed;
 	top: 0%;
 	left: 0%;
 	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+
+	.container {
+		position: relative;
+		width: 80rem;
+		height: 80rem;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 1rem;
+
+		button {
+			position: absolute;
+			top: 2rem;
+			right: 2rem;
+		}
+
+		.content {
+			width: 70rem;
+			height: 70rem;
+
+			h1 {
+				width: 70rem;
+				font-size: 5rem;
+			}
+
+			#lang {
+				font-size: 1.4rem;
+				text-align: center;
+				padding: 3rem 0;
+				color: #000;
+			}
+
+			#intro_text {
+				font-size: 2rem;
+				line-height: 3rem;
+			}
+
+			a {
+				position: absolute;
+				bottom: 2rem;
+				right: 2rem;
+				img {
+					width: 3rem;
+				}
+			}
+		}
+	}
 }
