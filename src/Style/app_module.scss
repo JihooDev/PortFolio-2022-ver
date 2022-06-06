@@ -38,3 +38,16 @@ $rusty-red: #de3c4b;
 		}
 	}
 }
+
+// ** 반응형
+
+@media (max-width: 76.8rem) {
+	* {
+		font-size: 25%;
+		width: 100vw;
+	}
+
+	.container {
+		width: 100vw;
+	}
+}

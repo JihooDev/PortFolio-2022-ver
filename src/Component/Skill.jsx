@@ -21,7 +21,6 @@ export default function Skill() {
 					<h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 						&lt;Skill <span>type = "기술 스택"</span> &gt;
 					</h2>
-					<button>Planning Skill</button>
 				</div>
 				<div className="skill_box" data-aos="fade-up" data-aos-duration="3000">
 					<div>

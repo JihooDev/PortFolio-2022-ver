@@ -3,23 +3,23 @@ import '../Style/main.scss';
 import project from '../ModuleFile/project';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Project_popup from './popup/Project_popup';
+import Project_modal from './popup/Project_modal';
 
 export default function Project() {
 	useEffect(() => {
 		AOS.init();
 	});
 
-	const [popup, setPopup] = useState(true);
+	const [modal, setModal] = useState(false);
 
 	const cardRef = useRef();
 
 	const [popNum, setPopNum] = useState(0);
 
-	const popupOpen = e => {
+	const modalOpen = e => {
 		console.log(popNum);
 		setPopNum(e.currentTarget.id);
-		setPopup(true);
+		setModal(true);
 	};
 
 	return (
@@ -35,7 +35,7 @@ export default function Project() {
 					<div className="project_main">
 						{project.map(it => {
 							return (
-								<div className="card" key={it.id} id={it.id} onClick={popupOpen} ref={cardRef}>
+								<div className="card" key={it.id} id={it.id} onClick={modalOpen} ref={cardRef}>
 									<h2>{it.name}</h2>
 									<img src={it.image} alt="프로젝트 img" />
 									<p>
@@ -45,7 +45,7 @@ export default function Project() {
 							);
 						})}
 					</div>
-					{popup ? <Project_popup setPopup={setPopup} project={project[popNum]} /> : null}
+					{modal ? <Project_modal setModal={setModal} project={project[popNum]} /> : null}
 				</div>
 			</div>
 		</div>
