@@ -29,7 +29,7 @@ export default function About() {
 							<br />
 							나만의 Skill 로 만드는
 							<br />
-							<span>프론트엔드 개발자 김지후</span>
+							<p>프론트엔드 개발자 김지후</p>
 						</h2>
 						<div data-aos="fade-up" data-aos-duration="3000">
 							<h2>Education</h2>

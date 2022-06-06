@@ -45,7 +45,7 @@ export default function Contact() {
 						<h1 data-aos="fade-down" data-aos-easing="linear">
 							“저의 포텐을 터트려줄 기업을 찾습니다”
 						</h1>
-						<p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+						<p data-aos="fade-right" data-aos-easing="ease-in-sine">
 							저의 만족감은 곧 사용자에서 부터 나옵니다.
 							<br />
 							사용자를 우선적으로 생각하는 결과물을 만들겠습니다.

@@ -38,7 +38,11 @@ export default function Skill() {
 							return (
 								<div key={it.id}>
 									<div className="per">
-										<div style={scrollPosition > 1885 ? { width: it.per + '%' } : { width: '0%' }}></div>
+										{window.screen.width > 768 ? (
+											<div style={scrollPosition > 1885 ? { width: it.per + '%' } : { width: '0%' }}></div>
+										) : (
+											<div style={scrollPosition > 1186 ? { width: it.per + '%' } : { width: '0%' }}></div>
+										)}
 									</div>
 									<p>{it.point}</p>
 								</div>

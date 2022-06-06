@@ -43,11 +43,298 @@ $rusty-red: #de3c4b;
 
 @media (max-width: 76.8rem) {
 	* {
-		font-size: 25%;
-		width: 100vw;
+		font-size: 30%;
 	}
 
-	.container {
+	@mixin tagBanner {
+		h2 {
+			font-size: 2rem;
+			font-family: $Poppins;
+
+			span {
+				font-size: 2rem;
+				color: $han-purple;
+			}
+		}
+	}
+
+	.Header {
 		width: 100vw;
+
+		.container {
+			width: 80rem;
+
+			div > h1 {
+				font-size: 2rem;
+			}
+
+			ul > li {
+				margin-left: 3rem;
+			}
+		}
+	}
+
+	.Main {
+		.container {
+			main {
+				h2 {
+					font-size: 3.5rem;
+				}
+			}
+		}
+	}
+
+	.About {
+		.container {
+			width: 80rem;
+
+			.about_box {
+				margin-top: 15rem;
+
+				.about_left {
+					width: 50%;
+					@include tagBanner();
+
+					div {
+						margin-top: 1rem;
+						position: relative;
+						width: 30rem;
+						height: 30rem;
+						background-image: url('../asset/myMain.jpg');
+						background-size: cover;
+						border-radius: 2rem;
+
+						h1 {
+							position: absolute;
+							top: 0;
+							right: -7rem;
+							font-size: 5rem;
+							text-align: center;
+							text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+						}
+					}
+				}
+
+				.about_right {
+					width: 50%;
+
+					h2 {
+						font-size: 2rem;
+						font-weight: 100;
+
+						p {
+							width: 25rem;
+							background-color: $han-purple;
+							padding: 0.5rem;
+							color: #fff;
+							font-weight: bold;
+							letter-spacing: 0.05rem;
+							border-radius: 1rem;
+							font-size: 2rem;
+						}
+					}
+
+					div {
+						margin-top: 5rem;
+						h2 {
+							font-size: 3rem;
+							font-weight: bold;
+							font-family: $Poppins;
+						}
+
+						p {
+							font-size: 1rem;
+							margin: 1rem 0;
+							font-weight: 100;
+						}
+					}
+				}
+			}
+		}
+	}
+	.Skill {
+		.container {
+			width: 80rem;
+
+			.skill_header {
+				@include tagBanner();
+			}
+
+			.skill_box {
+				margin-top: 0.5rem;
+				@include flex();
+				justify-content: flex-start;
+
+				.skill_text {
+					h3 {
+						font-size: 1rem;
+						font-weight: normal;
+						white-space: nowrap;
+						padding: 2rem 1rem;
+					}
+				}
+
+				.skill_per {
+					div {
+						@include flex();
+						justify-content: flex-start;
+						.per {
+							width: 50rem;
+							height: 1rem;
+
+							div {
+								width: 9rem;
+								height: 100%;
+								background-color: #2ecc71;
+								border-radius: 1rem;
+								transition: all 1s ease-in-out;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.Project {
+		height: 30vh;
+
+		.container {
+			width: 80rem;
+
+			.pro_header {
+				@include tagBanner();
+
+				#project_num {
+					white-space: nowrap;
+					font-size: 0.5rem;
+					margin: 1rem 0;
+					background-color: $han-purple;
+					width: 20rem;
+					text-align: center;
+					padding: 2rem;
+					color: #fff;
+					font-weight: normal;
+					border-radius: 1rem;
+				}
+			}
+
+			.project_main {
+				.card {
+					width: 15rem;
+					height: 30rem;
+					transition: all 0.3s ease-in-out;
+
+					&:hover {
+						background-color: $lavender-web;
+					}
+
+					h2 {
+						display: none;
+						font-size: inherit;
+						height: 5rem;
+						@include flex();
+						display: none;
+					}
+
+					img {
+						width: 100%;
+						height: 100%;
+						border-radius: 1rem;
+					}
+
+					p {
+						height: 5rem;
+						font-size: 1.5rem;
+						@include flex();
+						justify-content: flex-start;
+						display: none;
+						font-weight: bold;
+						padding-left: 3rem;
+
+						span {
+							font-size: 1.4rem;
+							margin-left: 0.4rem;
+							font-weight: normal;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.Contact {
+		.container {
+			width: 80rem;
+			@include tagBanner();
+
+			.contact_message {
+				height: 50vh;
+
+				.company_mes {
+					h2 {
+						font-size: 1rem;
+					}
+
+					div {
+						p {
+							margin-right: 2rem;
+							font-size: 1rem;
+						}
+					}
+				}
+
+				.jihoo_mes {
+					margin: 1rem;
+
+					h2 {
+						margin-left: 1rem;
+						font-size: 1rem;
+					}
+
+					p {
+						font-size: 1rem;
+						margin-left: 2rem;
+					}
+				}
+			}
+
+			.con_text {
+				padding: 2rem;
+
+				.con_main_text {
+					h1 {
+						font-size: 3rem;
+					}
+
+					p {
+						font-size: 2rem;
+
+						span {
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+
+			.phone_email {
+				p {
+					font-size: 1rem;
+					span {
+						img {
+							width: 3rem;
+						}
+					}
+				}
+			}
+
+			.link {
+				margin: 2rem 0rem;
+
+				ul > li > a > img {
+					width: 3rem;
+				}
+			}
+		}
 	}
 }

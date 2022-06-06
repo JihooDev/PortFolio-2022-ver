@@ -1,7 +1,7 @@
 @import './app_module.scss';
 
 .Header {
-	width: 100vw;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 9999;
@@ -141,7 +141,10 @@
 					font-size: 4.4rem;
 					font-weight: 100;
 
-					span {
+					p {
+						margin-top: 1rem;
+						width: 40rem;
+						text-align: center;
 						background-color: $han-purple;
 						padding: 1rem;
 						color: #fff;
@@ -199,17 +202,6 @@
 			@include flex();
 			justify-content: space-between;
 			@include tagBanner();
-
-			button {
-				font-size: 2.5rem;
-				padding: 1rem;
-				border: none;
-				outline: none;
-				border-radius: 1rem;
-				background-color: #de3c4b;
-				color: #fff;
-				cursor: pointer;
-			}
 		}
 
 		.skill_box {
