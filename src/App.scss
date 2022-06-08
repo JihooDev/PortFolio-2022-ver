@@ -1,5 +1,9 @@
 @import './Style/app_module.scss';
 
+body {
+	width: 100vw;
+}
+
 .App {
 	background-color: $ghost-white;
 }

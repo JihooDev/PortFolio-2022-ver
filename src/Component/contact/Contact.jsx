@@ -1,10 +1,10 @@
 import React from 'react';
-import '../Style/main.scss';
-import email from '../asset/email.png';
-import phone from '../asset/phone.png';
-import github from '../asset/github_logo.svg';
-import tistory from '../asset/tistory.png';
-import insta from '../asset/insta_logo.png';
+import './contact.scss';
+import email from '../../asset/email.png';
+import phone from '../../asset/phone.png';
+import github from '../../asset/github_logo.svg';
+import tistory from '../../asset/tistory.png';
+import insta from '../../asset/insta_logo.png';
 
 export default function Contact() {
 	return (

@@ -1,11 +1,10 @@
 import './App.scss';
-import Main from './Component/Main';
-import About from './Component/About';
-import Header from './Component/Header';
-import Skill from './Component/Skill';
-import Project from './Component/Project';
-import 'aos/dist/aos.css';
-import Contact from './Component/Contact';
+import Main from './Component/main/Main';
+import About from './Component/about/About';
+import Header from './Component/header/Header';
+import Skill from './Component/skill/Skill';
+import Project from './Component/project/Project';
+import Contact from './Component/contact/Contact';
 
 function App() {
 	return (

@@ -1,0 +1,74 @@
+@import '../../Style/app_module.scss';
+
+.Main {
+	width: 100%;
+	min-width: 360px;
+	height: 100vh;
+	background-image: url('../../asset/main_back.jpg');
+	background-size: cover;
+	@include flex();
+	position: relative;
+
+	.container {
+		width: 130rem;
+		margin: 0 auto;
+
+		main {
+			h2 {
+				font-size: 5rem;
+				text-align: center;
+				color: #fff;
+				line-height: 8rem;
+
+				span {
+					font-size: inherit;
+					padding: 1rem;
+					color: inherit;
+					background-color: $han-purple;
+					margin: 0 0.5rem;
+					border-radius: 1rem;
+				}
+			}
+		}
+	}
+
+	footer {
+		position: absolute;
+		bottom: 5%;
+
+		p {
+			font-size: 2rem;
+			color: #fff;
+			font-family: $Poppins;
+		}
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.Main {
+		width: 100%;
+
+		.container {
+			width: 130rem;
+			margin: 0 auto;
+
+			main {
+				h2 {
+					font-size: 1.3rem;
+					text-align: center;
+					color: #fff;
+					line-height: 4rem;
+
+					span {
+						font-size: inherit;
+						padding: 1rem;
+						color: inherit;
+						background-color: $han-purple;
+						margin: 0 0.5rem;
+						border-radius: 1rem;
+					}
+				}
+			}
+		}
+	}
+}

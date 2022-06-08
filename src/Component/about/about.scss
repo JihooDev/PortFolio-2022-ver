@@ -1,0 +1,89 @@
+@import '../../Style/app_module.scss';
+
+.About {
+	.container {
+		width: 130rem;
+		margin: 0 auto;
+
+		.about_box {
+			margin-top: 10rem;
+			@include flex();
+
+			.about_left {
+				width: 50%;
+				@include tagBanner();
+
+				div {
+					margin-top: 1rem;
+					position: relative;
+					width: 50rem;
+					height: 50rem;
+					background-image: url('../../asset/myMain.jpg');
+					background-size: cover;
+					border-radius: 2rem;
+
+					h1 {
+						position: absolute;
+						top: 0;
+						right: -10rem;
+						font-size: 7rem;
+						text-align: center;
+						text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					}
+				}
+			}
+
+			.about_right {
+				width: 50%;
+
+				h2 {
+					font-size: 4.4rem;
+					font-weight: 100;
+
+					p {
+						margin-top: 1rem;
+						width: 40rem;
+						text-align: center;
+						background-color: $han-purple;
+						padding: 1rem;
+						color: #fff;
+						font-weight: bold;
+						letter-spacing: 0.05rem;
+						border-radius: 1rem;
+					}
+				}
+
+				div {
+					margin-top: 10rem;
+					h2 {
+						font-size: 2.5rem;
+						font-weight: bold;
+						font-family: $Poppins;
+					}
+
+					p {
+						font-size: 1.7rem;
+						margin: 1rem 0;
+						font-weight: 300;
+					}
+				}
+			}
+		}
+
+		.about_message {
+			margin-top: 10rem;
+
+			.message_box {
+				width: 80rem;
+				background-color: #2ecc71;
+				border-radius: 2rem;
+				p {
+					padding: 3rem;
+					font-size: 2rem;
+					color: #fff;
+					font-weight: 100;
+				}
+			}
+		}
+	}
+}

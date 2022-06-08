@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import '../Style/main.scss';
-import skillArr from '../ModuleFile/data';
+import './skill.scss';
+import skillArr from '../../ModuleFile/data';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

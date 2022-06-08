@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './header.scss';
 
 export default function Header() {
 	const [scrollPosition, setScrollPosition] = useState(0);

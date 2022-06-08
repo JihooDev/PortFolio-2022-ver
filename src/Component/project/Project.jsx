@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import '../Style/main.scss';
-import project from '../ModuleFile/project';
+import './project.scss';
+import project from '../../ModuleFile/project';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Project_modal from './popup/Project_modal';
+import Project_modal from '../popup/Project_modal';
 
 export default function Project() {
 	useEffect(() => {

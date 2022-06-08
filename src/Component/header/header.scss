@@ -1,0 +1,56 @@
+@import '../../Style/app_module.scss';
+
+.Header {
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	min-width: 360px;
+	transition: all 0.2s ease-in-out;
+
+	&.active {
+		background-color: $cultured;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		.container {
+			div > h1 {
+				color: #000;
+			}
+			ul > li {
+				color: #000;
+			}
+		}
+	}
+
+	.container {
+		width: 130rem;
+		height: 10rem;
+		margin: 0 auto;
+		@include flex();
+		justify-content: space-between;
+
+		div > h1 {
+			font-size: 3rem;
+			font-family: $Poppins;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		ul {
+			@include flex();
+
+			li {
+				margin-left: 5rem;
+				font-size: 2rem;
+				color: #fff;
+				font-family: $Poppins;
+				cursor: pointer;
+				transition: all 0.2s ease-in-out;
+				&.active {
+					color: $han-purple;
+					position: relative;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
